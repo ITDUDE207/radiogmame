@@ -73,6 +73,22 @@ The project runs on Next.js 16 (App Router, Turbopack), React 19, TypeScript,
 Zustand, and Tailwind CSS 4. Tests use Vitest with React Testing Library and
 jsdom.
 
+## Deploying to Vercel
+
+The project is ready to deploy as-is. It has no environment variables, no
+database, and no API routes, so no configuration is required beyond pointing
+Vercel at the repository.
+
+1. In Vercel, choose **Add New → Project** and import this GitHub repository.
+2. Leave the defaults. Vercel detects Next.js and uses `npm ci` to install and
+   `next build` to build. `vercel.json` records those commands explicitly.
+3. Deploy. Every push to `main` produces a production deployment, and every pull
+   request gets a preview deployment.
+
+The `engines` field pins Node `>=20.9.0`, which is the minimum Next.js 16
+requires; Vercel's default Node 22 satisfies it. All routes are prerendered as
+static content, so the game is served from the CDN with no server runtime.
+
 ## Architecture
 
 The game is split so that all narrative content and all game rules are plain,

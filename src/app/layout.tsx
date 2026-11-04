@@ -12,6 +12,19 @@ export const metadata: Metadata = {
     "interactive fiction",
     "digital archive",
   ],
+  openGraph: {
+    title: "Error 404: Self Not Found",
+    description:
+      "Reconstruct a missing person from her conflicting digital remains. Chapter One: The Last Login.",
+    siteName: "Error 404: Self Not Found",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Error 404: Self Not Found",
+    description:
+      "Reconstruct a missing person from her conflicting digital remains. Chapter One: The Last Login.",
+  },
 };
 
 export const viewport: Viewport = {
