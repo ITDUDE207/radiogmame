@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+coverage
+.agent_tmp
+*.log
+.DS_Store
+.env
+.env*.local
+
+*.tsbuildinfo
